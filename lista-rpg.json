@@ -1,0 +1,14 @@
+{
+  "jogos": [
+    {
+      "nome": "fallout 3",
+      "categoria": "Ação, Aventura, Rpg",
+      "id": 4
+    },
+    {
+      "nome": "Mortal Kombat 3 Ultimate",
+      "categoria": "Ação, Arcade, Luta",
+      "id": 6
+    }
+  ]
+}

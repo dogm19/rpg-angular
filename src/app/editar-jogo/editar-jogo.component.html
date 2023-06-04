@@ -1,0 +1,24 @@
+<div class="container">
+  <h2 id="titulo">Editar Jogo</h2>
+  <div class="row">
+    <form class="col s12" (submit)="atualizarJogo()">
+      <div class="row">
+        <div class="input-field col s6">
+          <label id="text">
+            Nome:
+            <input type="text" [(ngModel)]="jogo.nome" name="nome">
+          </label>
+        </div>
+        <div class="input-field col s6">
+          <label id="text">
+            Categoria:
+            <input type="text" [(ngModel)]="jogo.categoria" name="categoria">
+          </label>
+        </div>
+      </div>
+      <button id="edit" class="btn-floating btn-large waves-effect waves-light #5288ee" type="submit">
+        <i class="material-icons">edit</i>
+      </button>
+    </form>
+  </div>
+</div>

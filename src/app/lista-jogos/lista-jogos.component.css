@@ -1,0 +1,22 @@
+#buscar {
+  margin-top: 30px;
+  position: fixed;
+  right: 15%;
+}
+#add {
+  margin-top: 15px;
+  font-weight: bold;
+}
+#titulo{
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #008000;
+}
+#edit{
+  color: #5288ee;
+}
+#delete{
+  color: #ce2020;
+  cursor: pointer;
+}

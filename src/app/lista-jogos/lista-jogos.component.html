@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <button id="buscar" class="btn-floating btn-large waves-effect waves-light green"
+    routerLink="/buscar"><i class="material-icons">search</i></button>
+  </div>
+  <h2 id="titulo">Lista de Jogos</h2>
+  <table class="centered">
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Categoria</th>
+      <th>Ações</th>
+    </tr>
+    <tr *ngFor="let jogo of jogos">
+      <td>{{ jogo.id }}</td>
+      <td>{{ jogo.nome }}</td>
+      <td>{{ jogo.categoria }}</td>
+      <td>
+        <a id="edit" routerLink="/editar/{{ jogo.id }}">
+          <i class="material-icons">edit</i>
+        </a>
+        <a id="delete" (click)="deletarJogo(jogo.id)">
+          <i class="material-icons">delete</i>
+        </a>
+      </td>
+    </tr>
+  </table>
+  <a id="add" class="waves-effect waves-light btn green" routerLink="/adicionar">Add
+    <i class="material-icons right">add</i></a>
+</div>
+
